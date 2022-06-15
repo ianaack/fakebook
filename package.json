@@ -1,0 +1,23 @@
+{
+  "name": "fakebook",
+  "version": "1.0.0",
+  "description": "An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianaack/fakebook.git"
+  },
+  "author": "Ian Ackerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianaack/fakebook/issues"
+  },
+  "homepage": "https://github.com/ianaack/fakebook#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8"
+  }
+}

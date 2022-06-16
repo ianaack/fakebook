@@ -15,7 +15,11 @@ const userController = {
 	getUserById({ params }, res) {
 		User.findOne({ _id: params.id })
 			.populate({ path: "friends", select: "-__v" })
-			.populate({ path: "thoughts", select: "-__v" })
+			.populate({
+				path: "thoughts",
+				select: "-__v",
+				populate: { path: "reactions" },
+			})
 			.select("-__v")
 			.then((dbUserData) => res.json(dbUserData))
 			.catch((err) => res.status(400));
@@ -28,7 +32,7 @@ const userController = {
 		//   "username": "<username>",
 		//   "email": "<email address>"
 		// }
-		User.create(body)
+		User.create({ body })
 			.then((dbUserData) => res.json(dbUserData))
 			.catch((err) => res.json(err));
 	},

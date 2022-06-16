@@ -60,9 +60,12 @@ const userController = {
 			if (!dbUserData) {
 				return res.status(404).json({ message: "No user found with this id!" });
 			}
-			Thought.deleteMany({ username: dbUserData.username }).then(function () {
-				console.log("Data Deleted").catch((err) => res.json(err));
-			});
+			Thought.deleteMany({ username: dbUserData.username })
+				.then(function () {
+					console.log("Data Deleted");
+					return res.json(dbUserData);
+				})
+				.catch((err) => res.json(err));
 		});
 	},
 

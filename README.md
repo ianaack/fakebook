@@ -10,12 +10,12 @@
   * [Ian Ackerman](https://github.com/ianaack)   
 
   ## Table of Contents
-  * [Description](Description)
-  * [Contribution](Contribution)
-  * [Deployment](Deployment)
-  * [Usage](Usage)
-  * [Tests](Tests)
-  * [License](License)
+  * [Description](#Description)
+  * [Contribution](#Contribution)
+  * [Deployment](#Deployment)
+  * [Usage](#Usage)
+  * [Tests](#Tests)
+  * [License](#License)
   
   ## Deployment
   The application is a backend API only so there is no application deployment.

@@ -32,7 +32,7 @@ const userController = {
 		//   "username": "<username>",
 		//   "email": "<email address>"
 		// }
-		User.create({ body })
+		User.create({ username: body.username, email: body.email })
 			.then((dbUserData) => res.json(dbUserData))
 			.catch((err) => res.json(err));
 	},

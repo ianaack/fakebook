@@ -19,17 +19,23 @@
   
   ## Deployment
   The application is a backend API only so there is no application deployment.
+
   In order to see how the application works check out: [Usage](Usage).
+
   To test the routes yourself and see the full capabilities check out: [Tests](Tests)
 
   Here are some screenshots of the example routes
 
   GET all users:
 
+<img width="590" alt="get-all-users" src="https://user-images.githubusercontent.com/47282257/174097845-7324bd28-47f9-43d2-8bb3-827152706e14.png">
+
   GET all thoughts:
 
+<img width="575" alt="get-all-thoughts" src="https://user-images.githubusercontent.com/47282257/174097834-7709c49a-a9fe-42a4-a48a-21ee7bd54890.png">
+
   ## Usage
-  For a walkthough example of how the application functions: [Go Here]()
+  For a walkthough example of how the application functions: [Go Here](https://drive.google.com/file/d/13t49axc0zL_20vigAwgWeFOM91FOqvvq/view?usp=sharing)
 
   ## Tests
   Tests for the application functionality were performed using Insomnia.
@@ -49,6 +55,7 @@
   node server
   ```
   - within insomnia make calls to access the different models and routes
+  
   To GET all users & POST a user:
   ```bash
   http://localhost:3001/api/users
